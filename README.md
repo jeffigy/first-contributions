@@ -29,7 +29,7 @@ This repository is created for **beginners** to learn and practice github flow b
     Use this format:
     ```bash
     ### [Your Name](https://github.com/<github-username>)
-    - Interests: Your interests 
+    - **Tech Stack:** Your tech stack
 
     ---
 
