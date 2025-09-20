@@ -1,0 +1,19 @@
+name: Post a welcome comment
+
+on:
+  pull_request:
+    types: [opened]
+
+jobs:
+  welcome:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Post a welcome comment
+        uses: peter-evans/comment@v3
+        with:
+          issue-number: ${{ github.event.pull_request.number }}
+          body: |
+            Welcome to the repository!
+            Thank you for opening the PR.
+            If you need help, feel free to ask in the comments below.
