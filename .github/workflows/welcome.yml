@@ -1,0 +1,21 @@
+name: Post a welcome comment
+
+on:
+  pull_request:
+    types: [opened]
+
+permissions:
+  pull-requests: write
+
+jobs:
+  welcome:
+    name: Post a welcome comment
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          gh pr comment ${{ github.event.pull_request.number }} \
+          --body "Welcome to the repository!
+          Thank you for opening the PR.
+          If you need help, feel free to ask in the comments below."
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
