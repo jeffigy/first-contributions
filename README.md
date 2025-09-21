@@ -51,7 +51,7 @@ This repository is created for **beginners** to learn and practice github flow b
 
 - You’ll see a banner → click **Compare & pull request**.
 
-- Add a clear title (e.g., "Adds My Name to Contributors.md").
+- Add a clear title (e.g., "Add your-name to Contributors.md").
 
 - Click **Create pull request**.
 
