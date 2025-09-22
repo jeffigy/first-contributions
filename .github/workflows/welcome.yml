@@ -18,5 +18,5 @@ jobs:
           Thank you for opening the PR.
           If you need help, feel free to ask in the comments below."
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GH_PAT }}
           PR_URL: ${{ github.event.pull_request.html_url }}
