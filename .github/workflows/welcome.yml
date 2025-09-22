@@ -19,4 +19,4 @@ jobs:
           If you need help, feel free to ask in the comments below."
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          PR_URL: ${{ github.event.pull_request.html_url }}
+          PR_URL: ${{ github.event.pull_request.number }}
