@@ -1,7 +1,7 @@
 name: Post a welcome comment
 
 on:
-  pull_request:
+  pull_request_target:
     types: [opened]
 
 permissions:
@@ -18,5 +18,5 @@ jobs:
           Thank you for opening the PR.
           If you need help, feel free to ask in the comments below."
         env:
-          GH_TOKEN: ${{ secrets.GH_PAT }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           PR_URL: ${{ github.event.pull_request.html_url }}
