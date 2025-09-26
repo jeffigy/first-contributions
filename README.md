@@ -13,6 +13,7 @@ This repository is created for **beginners** to learn and practice github flow b
 2. **Clone the forked repository**
     ```bash
     git clone https://github.com/<github-username>/first-contributions.git
+    cd first-contributions
     ```
 
 3. **Create a new branch**
